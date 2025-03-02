@@ -1,0 +1,140 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centre le texte */
+    padding-top: 50px; /* Décale légèrement vers le bas */
+  }
+  
+  /* Style des labels */
+  label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  /* Style des inputs et selects */
+  input, select {
+    width: 300px; /* Largeur fixe */
+    padding: 10px;
+    margin-bottom: 15px; /* Espacement entre les éléments */
+    border: 2px solid white;
+    border-radius: 8px; /* Bords arrondis */
+    background-color: #222; /* Fond gris foncé */
+    color: white; /* Texte blanc */
+    font-size: 16px;
+    outline: none; /* Supprime le contour bleu */
+  }
+  
+  /* Effet au survol */
+  input:hover, select:hover {
+    border-color: cyan;
+  }
+  
+  /* Effet au focus */
+  input:focus, select:focus {
+    border-color: lime;
+    box-shadow: 0 0 10px lime;
+  }
+  
+  /* Style du bouton */
+  button {
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: cyan;
+    color: rgb(239, 235, 235);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Effet au survol du bouton */
+  button:hover {
+    background-color: lime;
+    border-color: lime;
+  }
+ 
+
+
+
+  #calculateBox {
+    width: 160px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, cyan, blue);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: none; /* Caché par défaut */
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.5);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Effet au survol (hover) */
+  #calculateBox:hover {
+    background: linear-gradient(135deg, lime, green);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 255, 0, 0.5);
+  }
+  
+  /* Effet de clic */
+  #calculateBox:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 10px rgba(0, 255, 0, 0.5);
+  }
+  
+  /* Animation effet lumineux */
+  #calculateBox::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(246, 242, 242, 0.3) 10%, transparent 10%);
+    transition: all 0.5s ease;
+  }
+  
+  #calculateBox:hover::before {
+    top: 0;
+    left: 0;
+  }
+
+
+  .result-box {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            min-width: 200px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .result-box.show {
+            transform: scale(1.1);
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }

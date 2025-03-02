@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculator</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Black Background */
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Box Container */
+        .container {
+            background: #111; /* Dark Box */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+
+        /* Button Styles */
+        button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Future Value Button */
+        .fv-btn {
+            background-color: #4CAF50; /* Green */
+            color: white;
+        }
+
+        .fv-btn:hover {
+            background-color: #00ff7f; /* Light Green */
+            box-shadow: 0 0 10px #00ff7f;
+        }
+
+        /* Present Value Button */
+        .pv-btn {
+            background-color: #008CBA; /* Blue */
+            color: white;
+        }
+
+        .pv-btn:hover {
+            background-color: #00bfff; /* Light Blue */
+            box-shadow: 0 0 10px #00bfff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calculateur pour le cours de Finance des Marchés</h1>
+
+
+    <div class="container">
+        <button class="fv-btn" onclick="location.href='valeurfuture/index.html'">Calculer la valeur future</button>
+        <button class="pv-btn" onclick="location.href='valeuractuelle/index.html'">Calculer la valeur actuelle</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur Finance des Marchés</title>
+    <link rel="stylesheet" href="main.css " />
+
+</head>
+<body>
+
+    <label for="interestType">Type d'intérêt :</label>
+    <select id="interestType">
+    <option value="simple">Intérêts simples</option>
+    <option value="compose">Intérêts composés</option>
+    </select>
+
+    <label for="timeType">Type de durée :</label>
+    <select id="timeType">
+    <option value="annuel">Annuel</option>
+    <option value="semestriel">Semestriel (6 mois)</option>
+    <option value="trimestriel">Trimestriel (4 mois)</option>
+    <option value="mensuel">Mensuel</option>
+    <option value="hebdomadaire">Hebdomadaire</option>
+    <option value="quotidien">Quotidien</option>
+    </select>
+
+    <label for="interestRate"> Taux d'intérêts (en % p.a.) :</label>
+    <input type="number" id="amount" placeholder="Entrez un pourcentage" step="any"/>
+
+    <label for="annee"> Nombre d'années :</label>
+    <input type="number" id="an" placeholder="Entrez un nombre d'année"/>
+
+
+
+    <label for="mois"> Nombre de mois :</label>
+    <input type="number" id="mo" placeholder="Entrez un nombre de mois" />
+
+    <label for="mois"> Nombre de jours :</label>
+    <input type="number" id="jo" placeholder="Entrez un nombre de jours" />
+
+    <label for="future"> Valeur Future :</label>
+    <input type="number" id="vf" placeholder="Entrez la somme future" />
+
+
+    <div id="calculateBox" class="hidden">
+        Calculer
+    </div>
+
+    <div class="result-box" id="result">0</div>
+    <button onclick="updateResult()">Calculer</button>
+
+
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
